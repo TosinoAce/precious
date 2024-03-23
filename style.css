@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 50px;
+  z-index: 1;
+  background: transparent;
+}
+header img {
+  width: 40px;
+  cursor: pointer;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li a {
+  margin-left: 25px;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Zasline", sans-serif;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+header ul li a:hover {
+  color: #87532e;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 70px;
+  background-image: url(./images/pexels-andrea-piacquadio-3771106.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  color: white;
+  font-family: "Quahon", sans-serif;
+  font-size: 80px;
+  line-height: 80%;
+  font-weight: 400;
+  text-align: center;
+}
+.hero p {
+  font-family: "poppins", serif;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+.hero img {
+  width: 300px;
+}
+#phrase {
+  font-family: "Quahon", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.hero button {
+  height: 39px;
+  border-radius: 22px;
+  width: 270px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #87532e;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+.hero button:hover {
+  background-color: transparent;
+  border: 1px solid #87532e;
+}
+
+#Shop {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+#Shop h2 {
+  font-family: "Quahon", sans-serif;
+  text-align: center;
+  margin: 15px 0;
+}
+#Shop h2 span {
+  color: #87532e;
+}
+.cakeContainer {
+  display: flex;
+  padding: 10px 30px;
+  margin: 20px 0;
+  column-gap: 50px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cakeCard {
+  width: 230px;
+  padding: 15px;
+  border: 1px solid #87532e;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+    8px 8px 15px rgba(0, 0, 0, 0.2);
+  justify-content: start;
+}
+.cakeCard img {
+  width: 200px;
+  height: auto;
+  object-fit: fill;
+}
+.orderNow {
+  width: 100px;
+  padding: 8px 0;
+  background-color: #87532e;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 18px;
+  font-family: "poppins", serif;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.orderNow:hover {
+  border: 1px solid #87532e;
+  color: #87532e;
+  background-color: transparent;
+}
+.productName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Quahon", sans-serif;
+  margin: 8px 0 4px 0;
+  font-weight: 600;
+}
+.rateContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rateContainer svg {
+  color: #87532e;
+  cursor: pointer;
+}
+.productPrice {
+  font-family: "poppins", serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+#About {
+  width: 100%;
+  padding: 30px 70px;
+  background-image: url(./images/pexels-dmitry-zvolskiy-1721932.jpg);
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#About div {
+  width: 450px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+    8px 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#About div p {
+  font-family: "poppins", serif;
+  text-align: center;
+}
+#About div p span{
+    font-size: 18px;
+    color: #87532e;
+}
+#About div h2 {
+  font-family: "Quahon", sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#About div h2 span {
+  color: #87532e;
+}
+#Contact {
+  width: 100%;
+  padding: 40px 30px;
+}
+.address {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-color: #bd9980;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+.address h2 {
+  text-align: center;
+  font-family: "poppins", serif;
+  color: #ffffff;
+}
+.address p {
+  text-align: center;
+  font-family: "poppins", serif;
+  color: #ffffff;
+  font-weight: 500;
+}
+.contactHeading {
+  text-align: center;
+  font-family: "Quahon", sans-serif;
+  margin: 20px 0;
+}
+.contactHeading span {
+  color: #87532e;
+}
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+.socials svg {
+  color: #bd9980;
+  transition: 0.5s ease-in-out;
+}
+.socials svg:hover {
+  color: #87532e;
+}
+footer {
+  width: 100%;
+  padding: 10px 30px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Zasline", sans-serif;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 15px;
+}
+footer ul li {
+  color: black;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+footer ul li:hover {
+  color: #87532e;
+}
+footer p {
+  margin-top: 10px;
+  font-family: "poppins", serif;
+  letter-spacing: 5px;
+  font-size: 12px;
+  color: #87532e;
+}
+@media (max-width: 1024px) {
+  header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+  .bagCard {
+    width: 250px;
+  }
+  .bagCard img {
+    width: 220px;
+  }
+  .address div {
+    margin-bottom: 20px;
+  }
+  #About {
+    padding: 10px;
+  }
+  #About div {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}
